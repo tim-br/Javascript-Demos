@@ -11,11 +11,15 @@
 
 <body>
 
+  <button id="myButton">click me!</button>
+
   <p id="text">Some text</p>
   <script type="text/javascript">
     
-    document.getElementById("text").innerHTML="all roads lead to Rome";
-
+    //this is a comment
+    document.getElementById("myButton").onclick=function(){
+      alert("Hello World!");
+    }
   </script>
        
 </body>
