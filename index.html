@@ -15,11 +15,20 @@
 
   <div id="div1">This is some text</div>
 
+  <button id="textAppender">"append some text"</button>
+
+  <div id="div2">JS is...</div>
+
+  <
+
   <script type="text/javascript">
     
     //this is a comment
     document.getElementById("textChanger").onclick=function(){
       document.getElementById("div1").innerHTML="this is great";
+    }
+    document.getElementById("textAppender").onclick=function(){
+      document.getElementById("div2").innerHTML=document.getElementById("div2").innerHTML + "nachdencl";
     }
   </script>
        
