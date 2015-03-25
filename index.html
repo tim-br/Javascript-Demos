@@ -19,7 +19,9 @@
 
   <div id="div2">JS is...</div>
 
-  <
+  <button id="textCreator">"Create some text"</button>
+
+  <div id="emptyDiv"></div>
 
   <script type="text/javascript">
     
@@ -29,6 +31,9 @@
     }
     document.getElementById("textAppender").onclick=function(){
       document.getElementById("div2").innerHTML=document.getElementById("div2").innerHTML + "nachdencl";
+    }
+   document.getElementById("textCreator").onclick=function(){
+      document.getElementById("emptyDiv").innerHTML="<ul><li>Cat</li><li>Dog</li>";
     }
   </script>
        
