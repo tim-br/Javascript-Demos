@@ -11,17 +11,20 @@
 
 <body>
 
-  <button id="stylesChanger">Change 1st div styles</button>
+  <button id="stylesChanger">Change the text of div</button>
 
   <div id="firstDiv">This is some text</div>
+
+  <input id="myInput" type="text" />
+
 
   <script type="text/javascript">
 
     var divId="firstDiv";
 
+
     document.getElementById("stylesChanger").onclick=function(){
-      /*var elem = document.getElementById("red-circle");
-      elem.parentNode.removeChild(elem);*///works as well
+
       document.getElementById(divId).style.display="none";
     }
 
