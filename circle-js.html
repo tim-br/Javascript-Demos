@@ -7,7 +7,7 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-      .circle{
+      #red-circle{
         width: 100px;
         height: 100px;
         background: red;
@@ -20,16 +20,16 @@
 
 <body>
 
-  <div id="red-circle" class="circle">
+  <div id="red-circle">
      </div>
 
 
 
   <script type="text/javascript">
     document.getElementById("red-circle").onclick=function(){
-      var elem = document.getElementById("red-circle");
-      elem.parentNode.removeChild(elem);
-      //document.getElementById("circle").style.display="none"; may work
+      /*var elem = document.getElementById("red-circle");
+      elem.parentNode.removeChild(elem);*///works as well
+      document.getElementById("red-circle").style.display="none"; 
     }
 
   </script>
