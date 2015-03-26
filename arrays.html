@@ -15,32 +15,7 @@
 
   <div id="firstDiv">This is some text</div>
 
-  <script type="text/javascript">
-
-    var myArray=new Array();
-    myArray[0] = "pizza";
-    myArray[1] = "chocolate";
-
-    console.log(myArray);
-
-    myOtherArray=["peanuts", "jelly"];
-
-    myOtherArray.push("pizza");
-
-    myOtherArray.splice(1, 2); //removes the 2nd/3rd element
-
-    myOtherArray.push("hello");
-    myOtherArray.push("bill nye");
-
-    myOtherArray.splice(1, 0, "hail", "friday");//adds an elem before 1
-
-    console.log(myOtherArray);
-
-    console.log(myOtherArray.length);
-
-      document.getElementById("stylesChanger").onclick=function(){
-        document.getElementById("firstDiv").innerHTML=myArray[1];
-      }
+  <script type="text/javascript" src="arrays-script.js">
 
   </script>
 
