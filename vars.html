@@ -15,17 +15,17 @@
 
   <div id="firstDiv">This is some text</div>
 
-  <input id="myInput" type="text" />
+  <input id="myInput" type="text" value="test" />
 
 
   <script type="text/javascript">
 
-    var divId="firstDiv";
+    var newText=document.getElementById("myInput").value;
 
 
     document.getElementById("stylesChanger").onclick=function(){
 
-      document.getElementById(divId).style.display="none";
+      document.getElementById("firstDiv").innerHTML=newText;
     }
 
   </script>
